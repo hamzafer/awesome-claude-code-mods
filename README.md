@@ -151,7 +151,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [agentpane](https://github.com/xuanji86/claude-agentpane) - A side pane of the session's subagents with each one's current tool call and tokens, its conversation drawn in place on a click, and Stop; it opens when an agent starts and folds to a tab when they finish.
 - [gsd-status-mod](https://github.com/helenkwok/gsd-status-mod) - For GSD projects: shows where work stopped and a STATE.md drift warning above the prompt, adds the handoff's next action to the hint line, and offers the command it names as a Tab suggestion.
 - [claude-council](https://github.com/danzerzine/claude-council) - A band above the prompt that brings GPT in as fresh eyes on a stuck question, with its answer, Claude's take and GPT's reply pasted into the chat, and can have Codex check every handover against the chat's spec and send gross violations back before the agent answers.
-- [mission-control](https://github.com/hamzafer/claude-code-mods/tree/main/mods/mission-control) - A pane with every subagent and tool call live, plus a code map of the files they read and write.
+- [mission-control](https://github.com/hamzafer/claude-code-mods/tree/main/mods/mission-control) - A pane with every subagent and tool call live, plus a code map of the files they read and write, with a Haiku call that describes each file's changes.
 
 ## Building mods
 
