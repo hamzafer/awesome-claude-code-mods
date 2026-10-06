@@ -7,7 +7,7 @@ Add a browser beside your conversation, keep usage in view, or check a command b
 This community catalogue scans public GitHub repositories and records what Claude's validator reports each mod can read, write, run or send over the network. It is an independent scan, not an official Anthropic directory.
 
 <!-- stats:start -->
-**1752 mods** · Last scanned 2026-10-04.
+**2685 mods** · Last scanned 2026-10-06.
 <!-- stats:end -->
 
 ![Browsing a GitHub pull request beside a Claude Code conversation using terminal-browser](assets/terminal-browser-demo.gif)
@@ -94,6 +94,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [pr-bridge-watch](https://github.com/ippoan/gh-actions-live/tree/main/mods/pr-bridge-watch) - Connects a new PR's CI to a live watch over a WebSocket bridge.
 - [deploy-verify](https://github.com/yash-gadodia/claude-mods/tree/main/deploy-verify) - Checks configured live URLs after recognized deploy commands, waits for relevant GitHub Actions runs when present, and adds the verification result to model context.
 - [pr-pulse](https://github.com/gerricchaplin/pr-pulse) - Live status, merge readiness, failed-check drill-down, review threads and change alerts for your GitHub pull requests, in a pane that collapses to a band above the prompt.
+- [github-issues](https://github.com/MarcoCarnevali/claude-code-mods/tree/main/github-issues) - A pane of a repository's GitHub issues as cards, with tabs, search, a label filter, linked pull requests and a picker of your repositories, plus a button that hands an issue to Claude, all read through the GitHub CLI.
 - [review-watch](https://github.com/hamzafer/claude-code-mods/tree/main/mods/review-watch) - A live line for each running Codex review or review subagent, with its model and elapsed time, and a toast with the findings when it ends.
 
 ## Safety and privacy
@@ -132,6 +133,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [ko-ui](https://github.com/moduvoice/claude-code-ko-ui) - Shows slash-command descriptions, `/config` rows, spinner words, tool-call summaries and some transcript lines in Korean from a static dictionary, with no model calls or network.
 - [explain-as](https://github.com/Sumit189/explain-claude-mod) - `/explain` turns answers into plain ASD-STE100 prose, a Mermaid diagram or an HTML page shown as a zoomable picture in a pane (screenshot by a local headless Chrome), or a narrated canvas explainer video that plays in Chrome.
 - [prismantis](https://github.com/NahumLitvin/prismantis) - Redraws Claude's replies in a chosen colour theme, with tables, highlighted code, numbers and paths, GitHub alerts, mermaid diagrams and charts as box art, and right-to-left Hebrew and Arabic.
+- [tex-display](https://github.com/samox73/claude-code-latex) - Draws LaTeX display math in Claude's replies as typeset pictures in kitty and Ghostty and as Unicode text elsewhere, with MathJax bundled, so it runs no processes and writes no files.
 - [md-preview](https://github.com/hamzafer/claude-code-mods/tree/main/mods/md-preview) - Renders the Markdown files Claude edits like GitHub does in a pane, with before and after side by side.
 
 ## Agents and workflows
