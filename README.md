@@ -7,7 +7,7 @@ Add a browser beside your conversation, keep usage in view, or check a command b
 This community catalogue scans public GitHub repositories and records what Claude's validator reports each mod can read, write, run or send over the network. It is an independent scan, not an official Anthropic directory.
 
 <!-- stats:start -->
-**2685 mods** · Last scanned 2026-10-06.
+**2688 mods** · Last scanned 2026-10-06.
 <!-- stats:end -->
 
 ![Browsing a GitHub pull request beside a Claude Code conversation using terminal-browser](assets/terminal-browser-demo.gif)
@@ -48,6 +48,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [quota-meter](https://github.com/Arunjay4213/claude-mods/tree/main/plugins/quota-meter) - The 5-hour and 7-day plan windows as a pinned status line.
 - [agent-flow](https://github.com/Charlie0113-T/claude-agent-flow) - `/flow` opens a live tree of the session's subagents and teammates beside the transcript.
 - [effort-cycle](https://github.com/Anerco/effort-cycle-mod) - Alt+E and Alt+Shift+E step the effort level without a transcript row, and the footer shows the model and level as a colored meter.
+- [model-pick](https://github.com/joshuatonga/mini-claude-mods/tree/main/model-pick) - `/pick` fuzzy-searches a model and effort combo and applies it through `/model` and `/effort`, with favorites, typed aliases and the last five picks.
 - [burn-meter](https://github.com/OneWave-AI/claude-code-mods/tree/main/burn-meter) - Session spend as a growing fire bar above the prompt, with 5-hour and weekly plan limits and a `/burn` pane with per-turn cost.
 - [session-wrapped](https://github.com/OneWave-AI/claude-code-mods/tree/main/session-wrapped) - `/wrapped` plays an animated recap of the session and writes a shareable PNG card, with week and month totals read from local transcripts.
 - [context-view](https://github.com/kongyo2/context-view) - The context window as one row above the prompt, drawn like Claude Code's own meters, with the percentage used, tokens over the window and tokens left before auto-compact, plus `/context-view` to hide or show it.
@@ -62,6 +63,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [statuspane](https://github.com/xuanji86/claude-statuspane) - A floating status card above the prompt with model, effort, context, 5-hour and weekly limits, cost and branch, plus GitHub CI rows and progress bars any script or mod can feed.
 - [agent-quick-menu](https://github.com/agentic-workbench/agent-quick-menu) - A pane and prompt band for plugin commands declared in `quick-menu.json`, plus plugin and Claude Code settings exposed through `/config`.
 - [weektoken](https://github.com/3dnow/claude-mods/tree/main/weektoken) - Pace for the 5-hour, 7-day and per-model weekly limits such as Fable, shown as usage against elapsed time above the prompt, plus a `/weektoken` pane with a run-out forecast and a burn-up chart of past windows.
+- [clawd-dash](https://github.com/pinkpixel-dev/clawd-dash) - A three-column dashboard under the prompt with 5-hour, 7-day and context gauges, model, effort, cost, session stats, git status and file changes, plus an animated pixel Clawd that works, celebrates and relaxes along with the session.
 - [context-bar](https://github.com/hamzafer/claude-code-mods/tree/main/mods/context-bar) - The context window as one stacked bar above the prompt, a color per category like `/context`, with token counts and the compaction point.
 
 ## While you wait
@@ -73,6 +75,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [clawd-spinner](https://github.com/saiharsha03/clawd-spinner) - Clawd acts out the spinner word above the terminal spinner line while Claude works, with its own scene for each of the 189 words, drawn locally with no model calls or network.
 - [heavens-feel](https://github.com/yedidyakfir/heavens-feel) - A Fate/stay night: Heaven's Feel cast for your session, with an animated pixel Sakura in a pane and above the prompt who acts out each tool call, a Servant for every subagent whose transcript opens from its card, and a Master's or Servant's face beside each reply, drawn locally with no model calls or network.
 - [cc-pokedex](https://github.com/deonmenezes/claude-mods-pokedex) - Wild creatures appear above the prompt based on where your prompt leads.
+- [Spinlings](https://github.com/416rehman/spinlings) - A creature card game above the Claude Code prompt with wild encounters, asynchronous player duels, trading, and online or offline play.
 - [nibbl](https://github.com/nuromirzak/nibbl) - A pixel pet above the prompt that drops a bug when a tool fails and eats it when a test, lint or build passes; syncs event types and times to its own server.
 - [time](https://github.com/diegorv/claude-functions-hook/tree/main/plugins/time) - The time you sent each message, drawn above it.
 - [combo-meter](https://github.com/SARTHAK2511/claude-combo) - A fighting-game combo counter above the prompt: every clean tool call is a hit and every error breaks the chain, with D to SSS ranks, special moves like a red-to-green test, a pixel-art counter, toasts, chiptune effects on macOS and an all-time record, making no network calls.
@@ -85,6 +88,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [cs-radio](https://github.com/ben-rogerson/claude-counter-strike) - Counter-Strike 1.6 radio calls on Claude Code events, from "Fire in the hole" when a deploy starts to "Bomb has been defused" when a long turn lands, played from your own CS install or bundled soundalikes.
 - [claude-pokemon](https://github.com/dgokcin/claude-pokemon-mod) - Any of the 151 gen 1 Pokémon above the prompt to feed, pet and evolve, with a Poké Ball for each running subagent and 135 animated attacks.
 - [Pixel Play](https://github.com/chrisluo5311/Pixel-Play) - A docked pane that streams a YouTube or local playlist through mpv and yt-dlp while an animated pixel-art skin of your choice dances beside the conversation.
+- [stock-ticker](https://github.com/twjackysu/claude-code-stock-ticker) - Taiwan and US stock quotes above the prompt, fetched from TWSE MIS and Yahoo Finance every 15 seconds while the market is open and the session is on screen, with `/stock` to edit the watchlist, refresh rate, colors, alerts and language.
 
 ## Git, pull requests and CI
 
@@ -149,6 +153,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [prompt-spellcheck](https://github.com/ljmerza/prompt-spellcheck/tree/main/plugins/prompt-spellcheck) - Uses an extra Haiku call to correct typos before a submitted prompt reaches the model, skips fenced code, and shows changes in a toast, with a `/spellcheck` toggle.
 - [next-steps](https://github.com/pawandeepdhall/claude-mods/tree/main/plugins/next-steps) - After each reply, up to six Haiku-generated next steps appear above the prompt; select one or more and press Send to have Haiku compose and submit a combined prompt.
 - [agentpane](https://github.com/xuanji86/claude-agentpane) - A side pane of the session's subagents with each one's current tool call and tokens, its conversation drawn in place on a click, and Stop; it opens when an agent starts and folds to a tab when they finish.
+- [codex-pane](https://github.com/ManuelWarland/claude-codex-pane) - A `/codex` pane that follows the Codex CLI session you run in another terminal, sends the current exchange to Claude on request, or queues Claude's answer in Codex through `codex queue` after confirmation.
 - [gsd-status-mod](https://github.com/helenkwok/gsd-status-mod) - For GSD projects: shows where work stopped and a STATE.md drift warning above the prompt, adds the handoff's next action to the hint line, and offers the command it names as a Tab suggestion.
 - [claude-council](https://github.com/danzerzine/claude-council) - A band above the prompt that brings GPT in as fresh eyes on a stuck question, with its answer, Claude's take and GPT's reply pasted into the chat, and can have Codex check every handover against the chat's spec and send gross violations back before the agent answers.
 - [mission-control](https://github.com/hamzafer/claude-code-mods/tree/main/mods/mission-control) - A pane with every subagent and tool call live, plus a code map of the files they read and write, with a Haiku call that describes each file's changes.

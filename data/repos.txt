@@ -573,6 +573,7 @@ jonathan-fielding/dotclaude
 jonpojonpo/cc-crayon
 JoosepHint/flappy-code
 joshhornby/dotfiles
+joshuatonga/mini-claude-mods
 Jovan1666/claude-code-runway
 joydeep-pm/agent-theater
 joydeep-pm/usage-band
@@ -707,6 +708,7 @@ manson341349-beep/claude-desktop-mods
 manuacl/claude-mods
 manuel-will/cc-source-control
 manueldelgado/manueldelgado-mods
+ManuelWarland/claude-codex-pane
 Mar5929/claude-toolkit
 MarcoCarnevali/claude-code-mods
 marcsstevenson/claude-mods
@@ -1179,6 +1181,7 @@ tsurutanmen/session-dash
 tunglt1810/claude-gadgets
 tungnt1203/cmusic
 Turbo-Thorschten/shell-highlight
+twjackysu/claude-code-stock-ticker
 tylergraydev/cc-mods
 tylergraydev/rail-runner
 tzafrir/human-in-the-loop

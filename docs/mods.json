@@ -1,7 +1,7 @@
 {
   "generated": "2026-10-06T12:27:08.993Z",
   "claudeVersion": "2.1.291",
-  "repos": 1312,
+  "repos": 1315,
   "mods": [
     {
       "id": "anthropics/claude-code:mods/agents-md",
@@ -292218,6 +292218,302 @@
       "stars": 0,
       "pushedAt": "2026-09-30T11:50:10Z",
       "createdAt": "2026-09-21T03:30:37Z",
+      "license": "MIT",
+      "archived": false,
+      "defaultBranch": "main"
+    },
+    {
+      "id": "joshuatonga/mini-claude-mods:model-pick",
+      "repo": "joshuatonga/mini-claude-mods",
+      "path": "model-pick",
+      "sourceCommit": "062b11ee295454ff5c713d14c1fd8d22fcae9e99",
+      "name": "model-pick",
+      "description": "Fuzzy-pick a model + effort combo, with favorites, aliases and recents: /pick",
+      "author": "Joshua Tonga",
+      "homepage": "https://github.com/joshuatonga/mini-claude-mods",
+      "url": "https://github.com/joshuatonga/mini-claude-mods/tree/main/model-pick",
+      "kind": "mod",
+      "hasManifest": true,
+      "modules": [
+        "./register.tsx"
+      ],
+      "hooks": [
+        {
+          "event": "session.start",
+          "matcher": {}
+        },
+        {
+          "event": "classic.SessionStart",
+          "matcher": {
+            "source": "clear|resume|fork"
+          }
+        },
+        {
+          "event": "command.run",
+          "matcher": {
+            "command": "pick"
+          }
+        },
+        {
+          "event": "turn.step",
+          "matcher": {}
+        },
+        {
+          "event": "ui.render",
+          "matcher": {
+            "component": "Pane",
+            "requestId": "model-pick"
+          }
+        }
+      ],
+      "calls": [
+        "$.clock.after",
+        "$.clock.now",
+        "$.clock.sleep",
+        "$.command.register",
+        "$.command.run",
+        "$.session.model",
+        "$.settings.read",
+        "$.state.get",
+        "$.state.set",
+        "$.store.get",
+        "$.store.set",
+        "$.ui.close",
+        "$.ui.open",
+        "$.ui.resolve",
+        "$.ui.toast"
+      ],
+      "surfaceModules": [],
+      "validate": {
+        "status": "passed",
+        "claudeVersion": "2.1.291",
+        "errors": []
+      },
+      "marketplaces": [
+        {
+          "path": ".claude-plugin/marketplace.json",
+          "name": "mini-claude-mods",
+          "status": "passed",
+          "errors": []
+        }
+      ],
+      "compatibility": {
+        "runtime": "not-tested",
+        "warnings": []
+      },
+      "reach": {
+        "level": 2,
+        "name": "writes or runs",
+        "labels": [
+          "other: $.state.get",
+          "other: $.state.set",
+          "drives Claude",
+          "reads settings",
+          "persists state",
+          "draws"
+        ]
+      },
+      "sees": [
+        "classic hooks"
+      ],
+      "draws": [
+        "Pane"
+      ],
+      "stars": 1,
+      "pushedAt": "2026-10-07T02:37:35Z",
+      "createdAt": "2026-10-07T02:10:10Z",
+      "license": null,
+      "archived": false,
+      "defaultBranch": "main"
+    },
+    {
+      "id": "twjackysu/claude-code-stock-ticker:plugins/stock-ticker",
+      "repo": "twjackysu/claude-code-stock-ticker",
+      "path": "plugins/stock-ticker",
+      "sourceCommit": "4fed4f53135fa55d5a162ded645f2ad03887767b",
+      "name": "stock-ticker",
+      "description": "Live stock ticker band above the Claude Code prompt: watch Taiwan and US quotes while Claude works.",
+      "author": "twjackysu",
+      "homepage": "https://github.com/twjackysu/claude-code-stock-ticker",
+      "url": "https://github.com/twjackysu/claude-code-stock-ticker/tree/main/plugins/stock-ticker",
+      "kind": "mod",
+      "hasManifest": true,
+      "modules": [
+        "./register.tsx"
+      ],
+      "hooks": [
+        {
+          "event": "session.start",
+          "matcher": {}
+        },
+        {
+          "event": "command.run",
+          "matcher": {
+            "command": "stock"
+          }
+        },
+        {
+          "event": "ui.render",
+          "matcher": {
+            "component": "AbovePrompt"
+          }
+        }
+      ],
+      "calls": [
+        "$.clock.every",
+        "$.clock.now",
+        "$.command.register",
+        "$.http.fetch",
+        "$.session.surfaces",
+        "$.state.get",
+        "$.state.set",
+        "$.store.get",
+        "$.store.set",
+        "$.ui.resolve",
+        "$.ui.toast"
+      ],
+      "surfaceModules": [],
+      "validate": {
+        "status": "passed",
+        "claudeVersion": "2.1.291",
+        "errors": []
+      },
+      "marketplaces": [
+        {
+          "path": ".claude-plugin/marketplace.json",
+          "name": "claude-code-stock-ticker",
+          "status": "passed",
+          "errors": []
+        }
+      ],
+      "compatibility": {
+        "runtime": "not-tested",
+        "warnings": []
+      },
+      "reach": {
+        "level": 3,
+        "name": "network",
+        "labels": [
+          "other: $.state.get",
+          "other: $.state.set",
+          "network",
+          "persists state",
+          "draws"
+        ]
+      },
+      "sees": [],
+      "draws": [
+        "AbovePrompt"
+      ],
+      "stars": 1,
+      "pushedAt": "2026-10-07T00:08:43Z",
+      "createdAt": "2026-10-06T12:45:08Z",
+      "license": "MIT",
+      "archived": false,
+      "defaultBranch": "main"
+    },
+    {
+      "id": "ManuelWarland/claude-codex-pane:plugin",
+      "repo": "ManuelWarland/claude-codex-pane",
+      "path": "plugin",
+      "sourceCommit": "9e9bd622d8f02a4232e925a62b113715874b6439",
+      "name": "codex-pane",
+      "description": "Follow your Codex CLI session live in a Claude Code pane; relay the current exchange to Claude, or Claude's answer to Codex, one keypress and one confirmation at a time.",
+      "author": "Manuel Warland",
+      "homepage": "https://github.com/ManuelWarland/claude-codex-pane",
+      "url": "https://github.com/ManuelWarland/claude-codex-pane/tree/main/plugin",
+      "kind": "mod",
+      "hasManifest": true,
+      "modules": [
+        "./codex-pane.mjs"
+      ],
+      "hooks": [
+        {
+          "event": "session.start",
+          "matcher": {}
+        },
+        {
+          "event": "command.run",
+          "matcher": {
+            "command": "codex"
+          }
+        },
+        {
+          "event": "command.run",
+          "matcher": {
+            "command": "codex-to-claude"
+          }
+        },
+        {
+          "event": "ui.close",
+          "matcher": {}
+        },
+        {
+          "event": "turn.complete",
+          "matcher": {}
+        },
+        {
+          "event": "ui.scroll",
+          "matcher": {}
+        },
+        {
+          "event": "ui.render",
+          "matcher": {
+            "component": "Pane"
+          }
+        }
+      ],
+      "calls": [
+        "$.clock.after",
+        "$.clock.every",
+        "$.clock.now",
+        "$.command.register",
+        "$.process.run",
+        "$.prompt.submit",
+        "$.settings.read",
+        "$.ui.ask",
+        "$.ui.close",
+        "$.ui.invalidate",
+        "$.ui.open",
+        "$.ui.panes",
+        "$.ui.resolve",
+        "$.ui.toast"
+      ],
+      "surfaceModules": [],
+      "validate": {
+        "status": "passed",
+        "claudeVersion": "2.1.291",
+        "errors": []
+      },
+      "marketplaces": [
+        {
+          "path": ".claude-plugin/marketplace.json",
+          "name": "codex-pane",
+          "status": "passed",
+          "errors": []
+        }
+      ],
+      "compatibility": {
+        "runtime": "not-tested",
+        "warnings": []
+      },
+      "reach": {
+        "level": 2,
+        "name": "writes or runs",
+        "labels": [
+          "runs processes",
+          "drives Claude",
+          "reads settings",
+          "draws"
+        ]
+      },
+      "sees": [],
+      "draws": [
+        "Pane"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-10-06T10:58:53Z",
+      "createdAt": "2026-10-05T17:25:28Z",
       "license": "MIT",
       "archived": false,
       "defaultBranch": "main"
