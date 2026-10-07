@@ -95,7 +95,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [deploy-verify](https://github.com/yash-gadodia/claude-mods/tree/main/deploy-verify) - Checks configured live URLs after recognized deploy commands, waits for relevant GitHub Actions runs when present, and adds the verification result to model context.
 - [pr-pulse](https://github.com/gerricchaplin/pr-pulse) - Live status, merge readiness, failed-check drill-down, review threads and change alerts for your GitHub pull requests, in a pane that collapses to a band above the prompt.
 - [github-issues](https://github.com/MarcoCarnevali/claude-code-mods/tree/main/github-issues) - A pane of a repository's GitHub issues as cards, with tabs, search, a label filter, linked pull requests and a picker of your repositories, plus a button that hands an issue to Claude, all read through the GitHub CLI.
-- [review-watch](https://github.com/hamzafer/claude-code-mods/tree/main/mods/review-watch) - A live line for each running Codex review or review subagent, with its model and elapsed time, and a toast with the findings when it ends.
+- [review-watch](https://github.com/hamzafer/claude-code-mods/tree/main/mods/review-watch) - A live line for each running Codex review or review subagent, with its model and elapsed time, and a toast when it ends, with the findings when Codex's output has them.
 
 ## Safety and privacy
 
@@ -108,7 +108,7 @@ Read the mod's source and access details before installing. Validation checks th
 - [scope-guard](https://github.com/yash-gadodia/claude-mods/tree/main/scope-guard) - Tracks recognized file edits against a configurable threshold, with a model judge and user overrides that can permit further edits.
 - [merge-gate](https://github.com/yash-gadodia/claude-mods/tree/main/merge-gate) - Checks merge permission for recognized Bash merge commands and selected pushes from feature branches to trunk.
 - [receipt](https://github.com/yash-gadodia/claude-mods/tree/main/receipt) - Turns the turn footer into a receipt of edits, runs and curls, never folds a destructive command into a tool group, and names an unverified claim in the spinner.
-- [blast-radius](https://github.com/hamzafer/claude-code-mods/tree/main/mods/blast-radius) - Holds `rm -r`, force pushes and migrations, shows what they would delete or drop, and cancels if nobody answers in time.
+- [blast-radius](https://github.com/hamzafer/claude-code-mods/tree/main/mods/blast-radius) - Holds recognized recursive deletes, force pushes and migrations for confirmation, previews file deletions and branch changes, and cancels if nobody answers in time.
 
 ## Memory and context
 
